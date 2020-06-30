@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "0.0.1",
+  "description": "Adds a rd border to all webpages matching mozilla.org",
+  "icons": {
+    "48": "icons/border-icon.svg",
+    "96": "icons/border-icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}

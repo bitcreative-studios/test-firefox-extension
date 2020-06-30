@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "live-server",
+    "format:watch": "onchange '**/*.{html,css,scss,js,json}' -- prettier --write {{changed}}",
+    "serve": "npx serve",
+    "start": "run-p format:watch dev"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5"
+  }
+}
